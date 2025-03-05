@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Script Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 AI Script Generator</h1>
+        <p>Generate scripts based on the technology stack and description.</p>
+        
+        <div class="form-container">
+            <input type="text" id="stack" placeholder="Enter technology stack (e.g., Python, JavaScript)">
+            <input type="text" id="description" placeholder="Describe the script (e.g., API for login)">
+            <button id="generate-btn">Generate Script</button>
+        </div>
+
+        <div id="loading" class="hidden">⏳ Generating script...</div>
+        <div id="result" class="hidden"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
